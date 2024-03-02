@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Container, Heading, Text, VStack, Input, Button, useToast, Image } from "@chakra-ui/react";
+import { Box, Container, Heading, Text, VStack, Input, Button, useToast, Image, Link } from "@chakra-ui/react";
 import { FaEnvelope, FaPaperPlane } from "react-icons/fa";
 
 const Index = () => {
@@ -19,9 +19,27 @@ const Index = () => {
     setEmail(""); // Clear the input field
   };
 
+  const TableOfContents = () => (
+    <VStack align="start" spacing={4} mr={10}>
+      <Link href="#introduction" color="teal.500">
+        Introduction
+      </Link>
+      <Link href="#research" color="teal.500">
+        Research
+      </Link>
+      <Link href="#nootropics" color="teal.500">
+        'Smart Drugs'
+      </Link>
+      <Link href="#newsletter" color="teal.500">
+        Newsletter
+      </Link>
+    </VStack>
+  );
+
   return (
-    <Container maxW="container.xl">
-      <VStack spacing={8} py={10}>
+    <Container maxW="container.xl" display="flex">
+      <TableOfContents />
+      <VStack spacing={8} py={10} w="full">
         <Heading as="h1" size="2xl" textAlign="center">
           The Future of Neuroscience
         </Heading>

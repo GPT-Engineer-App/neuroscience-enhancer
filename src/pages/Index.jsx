@@ -21,18 +21,18 @@ const Index = () => {
 
   const TableOfContents = () => (
     <VStack align="start" spacing={4} mr={10}>
-      <Link href="#introduction" color="teal.500">
+      <Button as="a" href="#introduction" colorScheme="teal" variant="ghost" w="full" justifyContent="flex-start">
         Introduction
-      </Link>
-      <Link href="#research" color="teal.500">
+      </Button>
+      <Button as="a" href="#research" colorScheme="teal" variant="ghost" w="full" justifyContent="flex-start">
         Research
-      </Link>
-      <Link href="#nootropics" color="teal.500">
+      </Button>
+      <Button as="a" href="#nootropics" colorScheme="teal" variant="ghost" w="full" justifyContent="flex-start">
         'Smart Drugs'
-      </Link>
-      <Link href="#newsletter" color="teal.500">
+      </Button>
+      <Button as="a" href="#newsletter" colorScheme="teal" variant="ghost" w="full" justifyContent="flex-start">
         Newsletter
-      </Link>
+      </Button>
     </VStack>
   );
 
